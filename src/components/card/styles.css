@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.poke-card {
+  width: 250px;
+  height: 357px;
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 8px;
+  float: left;
+  margin: 10px;
+}
+
+.poke-card:hover {
+  box-shadow: 16px 20px 33px #EEF4FB !important;
+  background-color: #f9f9f9;
+}
+
+.poke-card .header {}
+
+.poke-card .header .grass,
+.bug {
+  height: 202px;
+  border-radius: 8px;
+  background-color: #D9F6E2;
+}
+
+.poke-card .header .fire {
+  height: 202px;
+  border-radius: 8px;
+  background-color: #F6EAD9;
+}
+
+.poke-card .header .water {
+  height: 202px;
+  border-radius: 8px;
+  background-color: #D9F1F6;
+}
+
+.poke-card .header .normal {
+  height: 202px;
+  border-radius: 8px;
+  background-color: #A4ACAF;
+}
+
+.poke-card img {
+  width: 170px;
+  height: 170px;
+}
+
+.poke-card .body {
+  margin: 10px;
+}
+
+.poke-card .body h2 {
+  font-size: 20px;
+  color: #374553;
+}
+
+.poke-card .body h2:first-letter {
+  text-transform: capitalize;
+}
+
+.poke-card .body span {
+  color: #374553;
+  font-size: 14px;
+  width: auto !important;
+  border-radius: 2px;
+  width: auto !important;
+  padding: 4px 8px;
+  margin-right: 5px;
+}
+
+.poke-card .body .grass {
+  background-color: #D9F6E2;
+}
+
+.poke-card .body .fire {
+  background-color: #F6EAD9;
+}
+
+.poke-card .body .water {
+  background-color: #D9F1F6;
+}
+
+.poke-card .body .poison {
+  background-color: #EED9F6;
+}
+
+.poke-card .body .flying {
+  background-color: #BDB9B8;
+}
+
+.poke-card .body .bug {
+  background-color: #729E3F;
+}
+
+.poke-card .body .normal {
+  background-color: #A4ACAF;
+}
