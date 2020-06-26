@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,47 +13,53 @@ body {
   width: 250px;
   height: 357px;
   padding: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 8px;
   float: left;
-  margin: 10px;
+  margin: 28px;
+  cursor: pointer;
 }
 
 .poke-card:hover {
-  box-shadow: 16px 20px 33px #EEF4FB !important;
-  background-color: #f9f9f9;
+  box-shadow: 16px 20px 33px #dde5ed !important;
 }
 
-.poke-card .header {}
+.poke-card .header {
+  width: 202px !important;
+}
 
 .poke-card .header .grass,
 .bug {
   height: 202px;
   border-radius: 8px;
-  background-color: #D9F6E2;
+  background-color: #a7db8d;
 }
 
 .poke-card .header .fire {
   height: 202px;
   border-radius: 8px;
-  background-color: #F6EAD9;
+  background-color: #f5ac78;
 }
 
 .poke-card .header .water {
   height: 202px;
   border-radius: 8px;
-  background-color: #D9F1F6;
+  background-color: #94dbee;
 }
 
 .poke-card .header .normal {
   height: 202px;
+  width: 202px;
   border-radius: 8px;
-  background-color: #A4ACAF;
+  background-color: #c6c6a7;
 }
 
 .poke-card img {
   width: 170px;
   height: 170px;
+  margin: auto !important;
+  display: block;
+  position: relative;
 }
 
 .poke-card .body {
@@ -80,29 +86,29 @@ body {
 }
 
 .poke-card .body .grass {
-  background-color: #D9F6E2;
+  background-color: #a7db8d;
 }
 
 .poke-card .body .fire {
-  background-color: #F6EAD9;
+  background-color: #f5ac78;
 }
 
 .poke-card .body .water {
-  background-color: #D9F1F6;
+  background-color: #94dbee;
 }
 
 .poke-card .body .poison {
-  background-color: #EED9F6;
+  background-color: #d8a4d8;
 }
 
 .poke-card .body .flying {
-  background-color: #BDB9B8;
+  background-color: #c6b7f5;
 }
 
 .poke-card .body .bug {
-  background-color: #729E3F;
+  background-color: #c6d16e;
 }
 
 .poke-card .body .normal {
-  background-color: #A4ACAF;
+  background-color: #a4acaf;
 }
