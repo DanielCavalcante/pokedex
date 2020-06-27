@@ -9,7 +9,6 @@ export default (props) => {
   const [type, setType] = useState("");
   useEffect(() => {
     api.get(`/${name}`).then((res) => {
-      console.log(res.data);
       setImg(res.data.sprites.front_default);
       setTypes(res.data.types);
       setType(res.data.types[0].type.name);

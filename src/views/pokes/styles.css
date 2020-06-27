@@ -1,0 +1,14 @@
+body {
+  background-color: #F6F8FA !important;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 64px;
+}

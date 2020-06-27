@@ -9,10 +9,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .container {
+    transform: scale(1.2);
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 64px;
+}
+
 .poke-card {
+  flex-direction: column;
   width: 250px;
   height: 357px;
-  padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   float: left;
@@ -21,11 +34,20 @@ body {
 }
 
 .poke-card:hover {
-  box-shadow: 16px 20px 33px #dde5ed !important;
+  -webkit-box-shadow: 0px 0px 37px 1px #dde5ed;
+  -moz-box-shadow: 0px 0px 37px 1px #dde5ed;
+  box-shadow: 0px 0px 37px 1px #dde5ed;
+  transform: scale(1.02);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .poke-card .header {
   width: 202px !important;
+  margin: 24px 0 16px 24px;
 }
 
 .poke-card .header .grass,
@@ -51,19 +73,95 @@ body {
   height: 202px;
   width: 202px;
   border-radius: 8px;
-  background-color: #c6c6a7;
+  background-color: #C6C6A7;
+}
+
+.poke-card .header .poison {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #D8A4D8;
+}
+
+.poke-card .header .electric {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #FAE078;
+}
+
+.poke-card .header .ground,
+.rock {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #D1C17D;
+}
+
+.poke-card .header .fairy {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #F4BDC9;
+}
+
+.poke-card .header .fighting {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #D67873;
+}
+
+.poke-card .header .psychic {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #FA92B2;
+}
+
+.poke-card .header .ghost {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #B09ECE;
+}
+
+.poke-card .header .ice {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #BCE6E6;
+}
+
+.poke-card .header .dragon {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #B99BFF;
+}
+
+.poke-card .header .steel {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #D1D1E0;
+}
+
+.poke-card .header .dark {
+  height: 202px;
+  width: 202px;
+  border-radius: 8px;
+  background-color: #A29288;
 }
 
 .poke-card img {
   width: 170px;
   height: 170px;
-  margin: auto !important;
-  display: block;
-  position: relative;
+  margin: 16px;
 }
 
 .poke-card .body {
-  margin: 10px;
+  margin: 24px;
 }
 
 .poke-card .body h2 {
@@ -83,6 +181,7 @@ body {
   width: auto !important;
   padding: 4px 8px;
   margin-right: 5px;
+  text-transform: capitalize !important;
 }
 
 .poke-card .body .grass {
@@ -110,5 +209,42 @@ body {
 }
 
 .poke-card .body .normal {
-  background-color: #a4acaf;
+  background-color: #C6C6A7;
+}
+
+.poke-card .body .ground,
+.rock {
+  background-color: #D1C17D;
+}
+
+.poke-card .body .fairy {
+  background-color: #F4BDC9;
+}
+
+.poke-card .body .fighting {
+  background-color: #D67873;
+}
+
+.poke-card .body .psychic {
+  background-color: #FA92B2;
+}
+
+.poke-card .body .ghost {
+  background-color: #B09ECE;
+}
+
+.poke-card .body .steel {
+  background-color: #D1D1E0;
+}
+
+.poke-card .body .dark {
+  background-color: #A29288;
+}
+
+.poke-card .body .ice {
+  background-color: #BCE6E6;
+}
+
+.poke-card .body .electric {
+  background-color: #FAE078;
 }
