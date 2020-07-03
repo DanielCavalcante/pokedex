@@ -4,4 +4,4 @@
 
 **E posteriormente um yarn start ou npm start**
 
-**https://pokedexbr.herokuapp.com**
+**https://mypokedexbr.herokuapp.com**
